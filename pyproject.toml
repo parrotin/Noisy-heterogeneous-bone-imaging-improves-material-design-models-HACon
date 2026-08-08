@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools==68.2.2", "wheel==0.41.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hacon"
+version = "1.0.0"
+requires-python = "==3.10.*"
+dependencies = [
+  "torch==2.1.0",
+  "torchvision==0.16.0",
+  "monai==1.3.0",
+  "numpy==1.26.2",
+  "scipy==1.11.4",
+  "nibabel==5.1.0",
+  "pydicom==2.4.4",
+  "PyYAML==6.0.1"
+]
+
+[project.scripts]
+hacon-train = "hacon.entrypoints.train:main"
+hacon-evaluate = "hacon.entrypoints.evaluate:main"
+hacon-prepare = "hacon.entrypoints.prepare:main"
+
+[tool.setuptools]
+package-dir = {"" = "code"}
+
+[tool.setuptools.packages.find]
+where = ["code"]
+

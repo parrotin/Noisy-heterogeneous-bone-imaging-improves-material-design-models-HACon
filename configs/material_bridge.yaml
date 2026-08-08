@@ -1,0 +1,16 @@
+encoder:
+  frozen: true
+  representation_dim: 512
+head:
+  hidden_dims: [256, 128]
+  activation: relu
+  outputs: [elastic_modulus_gpa, porosity_bvtv, trabecular_thickness_mm]
+training:
+  optimizer: adamw
+  learning_rate: 0.001
+  epochs: 100
+evaluation:
+  metrics: [r2, mae, rmse, relative_error]
+  ensemble_members: 5
+  prediction_interval: 0.90
+

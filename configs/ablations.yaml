@@ -1,0 +1,22 @@
+experiments:
+  full:
+    cross_site_pairs: true
+    site_modulation: true
+  without_cspm:
+    cross_site_pairs: false
+    site_modulation: true
+  without_smt:
+    cross_site_pairs: true
+    site_modulation: false
+  pooled_simclr:
+    cross_site_pairs: false
+    site_modulation: false
+  single_site:
+    cross_site_pairs: false
+    site_modulation: false
+    sites: [totalsegmentator]
+  equal_budget:
+    initialization: random
+    cross_site_pairs: false
+    site_modulation: false
+

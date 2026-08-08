@@ -1,0 +1,36 @@
+seed: 17
+data:
+  manifest: data/manifests/pretraining.jsonl
+  patch_size: [96, 96, 96]
+  spacing: [1.0, 1.0, 1.0]
+  hu_window: [-200.0, 1500.0]
+  metadata_missing_limit: 0.30
+model:
+  backbone: resnet50_3d
+  representation_dim: 512
+  projection_hidden_dim: 2048
+  projection_dim: 128
+objective:
+  base_temperature: 0.07
+  modulation_strength: 1.5
+  cross_site_pairs: true
+  site_modulation: true
+training:
+  epochs: 200
+  batch_size: 256
+  world_size: 8
+  gradient_accumulation: 1
+  learning_rate: 0.0003
+  warmup_epochs: 10
+  weight_decay: 0.0001
+  optimizer: adamw
+  scheduler: cosine
+  precision: fp16
+  gradient_clip_norm: 1.0
+  workers: 16
+  checkpoint_every: 10
+evaluation:
+  seeds: [17, 29, 43, 71, 101]
+  ensemble_members: 5
+  confidence: 0.95
+

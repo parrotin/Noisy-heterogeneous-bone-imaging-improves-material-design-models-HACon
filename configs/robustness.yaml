@@ -1,0 +1,10 @@
+noise:
+  gaussian_standard_deviation: [0.01, 0.03, 0.05, 0.10]
+scanner:
+  hu_offset_fraction: [-0.10, -0.05, 0.05, 0.10]
+  resolution_factor: [1.25, 1.50, 2.00]
+  kernel_blur_radius: [1, 2, 3]
+evaluation:
+  metrics: [dice, auc, hd95]
+  seeds: [17, 29, 43, 71, 101]
+

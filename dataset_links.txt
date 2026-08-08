@@ -1,0 +1,35 @@
+Osteoarthritis Initiative
+https://nda.nih.gov/oai
+Access: free registration and NIH Data Use Agreement
+Verified: HTTP 200 on 2026-08-08
+
+TotalSegmentator
+https://github.com/wasserth/TotalSegmentator
+License: CC BY 4.0 for the imaging dataset
+Verified: HTTP 200 on 2026-08-08
+
+SAROS
+https://zenodo.org/records/10047292
+License: CC BY 4.0
+Verified: HTTP 200 on 2026-08-08
+
+TCIA CT-ORG
+https://www.cancerimagingarchive.net/collection/ct-org/
+License: CC BY 3.0
+Verified: HTTP 200 on 2026-08-08
+
+VerSe 2019 and 2020
+https://github.com/anjany/verse
+License: CC BY 4.0
+Verified: HTTP 200 on 2026-08-08
+
+CT-Pelvic1K
+https://zenodo.org/records/4588403
+License: CC BY-NC 4.0
+Verified: HTTP 200 on 2026-08-08
+
+TCIA Spine-Mets-CT-SEG
+https://www.cancerimagingarchive.net/collection/spine-mets-ct-seg/
+License: CC BY 4.0
+Verified: HTTP 200 on 2026-08-08
+
